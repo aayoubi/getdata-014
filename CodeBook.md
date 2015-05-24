@@ -40,9 +40,7 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-*Note*:
-* Features starting with `f` to indicate frequency domain signals.
-* Features starting with `t` to indicate time domain signals.
+The **purpose** is to capture the mean and standard deviation of all of the following measurements:
 
 ```
 tBodyAcc-XYZ
@@ -64,7 +62,11 @@ fBodyGyroMag
 fBodyGyroJerkMag
 ```
 
-Here is a description of the final tidy data set:
+**Note**:
+* Features starting with `f` to indicate frequency domain signals.
+* Features starting with `t` to indicate time domain signals.
+
+Here is the structure of the final tidy data set:
 
 ```
 > str(tidy.data)
